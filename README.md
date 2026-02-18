@@ -1,5 +1,7 @@
 # CPAN226 Lab 2 - UDP Reliability Observations
 
+Lab02 - Harry Joseph - Student Number: N00881767
+
 ## Student Info
 - Name: Harry Joseph
 - Student ID: N00881767
