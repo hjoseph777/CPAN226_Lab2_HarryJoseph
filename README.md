@@ -14,9 +14,7 @@ This report follows the Lab 02 observation requirement:
 - [server.py](server.py) - Receiver (modified)
 - [client.py](client.py) - Sender (modified)
 - [relay.py](relay.py) - Relay simulator (not modified)
-- [old_lady.jpg](old_lady.jpg) - test image (click to open, preview shown below)
-
-![Test image preview](old_lady.jpg)
+- [old_lady.jpg](old_lady.jpg "old_lady.jpg - test image") - test image
 
 ---
 
@@ -51,13 +49,8 @@ python client.py --target_port 12001 --file old_lady.jpg
   ![Test A - Supporting direct result screenshot](evidence/screenshots/Screenshot%202026-02-18%20124601.png)
 
 ### Test A Image Files
-Original test image:
-
-![Original image](old_lady.jpg)
-
-Latest received image file generated during testing:
-
-![Received image output](received_127_0_0_1_12000.jpg)
+- Original test image: [old_lady.jpg](old_lady.jpg "old_lady.jpg - test image")
+- Latest received image generated during testing: [received_127_0_0_1_12000.jpg](received_127_0_0_1_12000.jpg)
 
 ---
 
