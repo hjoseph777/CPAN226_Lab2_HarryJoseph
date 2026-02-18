@@ -132,3 +132,46 @@ powershell -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'" > evidence/time
 	Real local system timestamp for Test A evidence window.
 - `evidence/timestamps/testB_time.txt`  
 	Real local system timestamp for Test B evidence window.
+
+---
+
+## Submission Screenshot Checklist (Rubric 1-4)
+
+Use these exact filenames for clear grading alignment:
+
+1. `evidence/screenshots/screenshot1_direct_side_by_side.png`  
+	Show `old_lady.jpg` and direct-transfer received image side-by-side with visible system date/time.
+
+2. `evidence/screenshots/screenshot2_corrupted_relay.png`  
+	Show corrupted relay output image with visible system date/time.
+
+3. `evidence/screenshots/screenshot3_clean_after_fix_via_relay.png`  
+	After reliability fix, show clean received image transferred through relay with visible system date/time.
+
+4. `evidence/screenshots/screenshot4_final_check_result.png`  
+	Show final check evidence (`--loss 0.3 --reorder 0.2`) and successful clean image result with visible system date/time.
+
+### Final Check Command (Ultimate Test)
+```bash
+python relay.py --bind_port 12000 --server_port 12001 --loss 0.3 --reorder 0.2
+```
+
+### Rubric Screenshot Preview
+
+#### Screenshot 1 - Direct side-by-side
+`evidence/screenshots/screenshot1_direct_side_by_side.png`
+
+![Screenshot 1 - Direct side-by-side](evidence/screenshots/screenshot1_direct_side_by_side.png)
+
+#### Screenshot 2 - Corrupted relay image (pre-fix behavior evidence)
+`evidence/screenshots/screenshot2_corrupted_relay.png`
+
+![Screenshot 2 - Corrupted relay](evidence/screenshots/screenshot2_corrupted_relay.png)
+
+#### Screenshot 3 - Clean image after fix via relay
+`evidence/screenshots/screenshot3_clean_after_fix_via_relay.png`  
+Status: Pending manual capture (must include taskbar date/time).
+
+#### Screenshot 4 - Final check result (`--loss 0.3 --reorder 0.2`)
+`evidence/screenshots/screenshot4_final_check_result.png`  
+Status: Pending manual capture (must include taskbar date/time).
