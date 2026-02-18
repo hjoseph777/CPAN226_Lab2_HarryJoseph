@@ -1,10 +1,9 @@
 # CPAN226 Lab 2 - UDP Reliability Observations
 
-Lab02 - Harry Joseph - Student Number: N00881767
-
-## Student Info
-- Name: Harry Joseph
-- Student ID: N00881767
+## Submission Details
+- Course: CPAN226 Lab 02
+- Student: Harry Joseph
+- Student Number: N00881767
 
 ## Assignment Flow
 This report follows the Lab 02 observation requirement:
@@ -134,6 +133,12 @@ powershell -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'" > evidence/time
 	Real local system timestamp for Test A evidence window.
 - `evidence/timestamps/testB_time.txt`  
 	Real local system timestamp for Test B evidence window.
+
+---
+
+## Buffer Logic Explanation
+
+The receiver in `server.py` keeps an `expected_seq_num` and a dictionary buffer (`reorder_buffer`) keyed by sequence number so packets are written to disk in the correct order even when they arrive out of order. If an incoming DATA packet matches `expected_seq_num`, it is written immediately, then the server checks the buffer for the next contiguous sequence numbers and flushes them in order. If a packet arrives early (`seq_num > expected_seq_num`), it is stored in the buffer until missing earlier packets arrive; if it is old/duplicate (`seq_num < expected_seq_num`), it is not written again. This guarantees ordered file reconstruction while ACK responses support retransmission behavior on the sender side.
 
 ---
 
