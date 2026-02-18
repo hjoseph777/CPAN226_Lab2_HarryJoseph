@@ -11,10 +11,12 @@ This report follows the Lab 02 observation requirement:
 2. Test B (Broken network): UDP transfer through relay with packet reordering.
 
 ## Provided/Used Files
-- `server.py` - Receiver (modified)
-- `client.py` - Sender (modified)
-- `relay.py` - Relay simulator (not modified)
-- `old_lady.jpg` - test image
+- [server.py](server.py) - Receiver (modified)
+- [client.py](client.py) - Sender (modified)
+- [relay.py](relay.py) - Relay simulator (not modified)
+- [old_lady.jpg](old_lady.jpg) - test image (click to open, preview shown below)
+
+![Test image preview](old_lady.jpg)
 
 ---
 
