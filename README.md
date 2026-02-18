@@ -169,9 +169,11 @@ python relay.py --bind_port 12000 --server_port 12001 --loss 0.3 --reorder 0.2
 ![Screenshot 2 - Corrupted relay](evidence/screenshots/screenshot2_corrupted_relay.png)
 
 #### Screenshot 3 - Clean image after fix via relay
-`evidence/screenshots/screenshot3_clean_after_fix_via_relay.png`  
-Status: Pending manual capture (must include taskbar date/time).
+`evidence/screenshots/screenshot3_clean_after_fix_via_relay.png`
+
+![Screenshot 3 - Clean after fix via relay](evidence/screenshots/screenshot3_clean_after_fix_via_relay.png)
 
 #### Screenshot 4 - Final check result (`--loss 0.3 --reorder 0.2`)
-`evidence/screenshots/screenshot4_final_check_result.png`  
-Status: Pending manual capture (must include taskbar date/time).
+`evidence/screenshots/screenshot4_final_check_result.png`
+
+![Screenshot 4 - Final check result](evidence/screenshots/screenshot4_final_check_result.png)
